@@ -1,50 +1,76 @@
 body{
-    background: #aaaaaa;
+    background: #fafafa;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 #app{
-    display: grid;
-    grid-auto-rows: minmax(150px, auto);
-    /* grid-template-columns:  */
-    height:100vh;
-    background: #f23557;
-    color: #f0d43a;
+    width:100%;
+    display:grid;
+    grid-template-areas: "div1 div1 div1 div1" "div2 div2 div2 div2" "div3 div3 div3 div3" "div4 div4 div4 div4";       
+    height:100%;
+    background: #e4c82e;
+    color: #fafafa;
     justify-content: center;
-    grid-gap: 1em;
+    grid-gap: 2em;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
 }
 
-.holder{
 
-}
 
 .entry{
     background: rgba(59, 74, 107, .4);
+   /*float:right;
+    display:inline-block;
+    position:relative;
+    top:60%;
+    right:2%;*/
+    grid-area:div4;
+    
 }
 
 #entryHolder{
-
+    background:#22b2da;
+    height:auto;
+    
 }
 
 #date{
-
+ color:yellow;
 }
 
 #temp{
-
+    color:antiquewhite;
+font-style: italic;
 }
 
 #content{
+color:moccasin;
+}
+.zip {
+    grid-area:div2;
+    
+}
+.feel{
+        grid-area:div3;
 
 }
-
 .headline {
+height:10vh;
+    vertical-align: middle;
+    text-align: center;
+    margin:0 auto;
+    padding-top:10%;
+        font-size:2em;
+    grid-area: div1;
+}
 
+#handlermessage{
+    color:black;
+    font-weight:bold;
 }
 .title{
-
+background: 22b2da;
 }
 
 /*  Basic Styling To Override Default For Basic HTML Elements */
