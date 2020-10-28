@@ -65,7 +65,7 @@ let getData = async (url = "") => {
 let place;
 
 function getExternalDataFun(baseurl, zip, keyapi) {
-    getData("http://" + baseurl + zip + "&appid=" + keyapi)
+    getData("https://" + baseurl + zip + "&appid=" + keyapi)
         .then(function (data) {
             /*console.log("data from weatherapi is ");
             console.log(data);*/
